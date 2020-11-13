@@ -1,12 +1,375 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <link rel="stylesheet" href="styles/style.css">
-    
-  </head>
-  <body>
-  <h1>Oi</h1>
-<p>Por enquanto isto é meu site.</p>
-  </body>
+	<head>
+		<title>Matias</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,900;1,300;1,900&display=swap" rel="stylesheet">
+		<style>
+			
+			body {
+			max-width:1200px;
+			margin:auto;
+			font-family: 'Piazzolla', serif;
+			padding:20px;
+			}
+			
+			header#main {
+			background-color:white;
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 20px;
+			}
+			
+			header#main h1 {
+			grid-column: 1 / span 4;
+			}
+			
+			header#main p.about-1{
+			grid-column: 1 / span 2;
+			background-color:#999;
+			}
+			
+			header#main p.about-2{
+			grid-column: 3 / span 1;
+			background-color:#666;
+			}
+			
+			header#main p.about-3{
+			grid-column: 4 / span 1;
+			background-color:#333;
+			}
+
+			h2, h3 {
+			line-height: 100%;
+			font-size:160%;
+			}
+
+			h3 {
+			font-weight:300;
+			}
+
+			p.gravata {
+			}
+			
+			p.more {
+			display:block;
+			}
+			
+			p.more a{
+			text-decoration:none;
+			font-weight:300;
+			color:tomato;
+			background-color:white;
+			padding: 5px;
+			padding-left;padding-right: 8px;
+			width:100%;
+			border: 1px solid tomato;
+			}
+			
+			p.more a:hover{
+			color:white;
+			background-color:tomato;
+			padding: 5px;
+			width:100%;
+			border: 1px solid tomato;
+
+			}
+
+			section {
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			background:white;
+			grid-gap: 20px;
+			border-bottom: 3px solid black;
+			}
+
+			header.categoria {
+			grid-column: 1 / span 1;
+			}
+
+			section:first-of-type { 
+			border-top: 3px solid black;
+			}
+
+			article:first-of-type { 
+			border-top: none;
+			}
+
+			article {
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr ;
+			grid-gap: 20px;
+			grid-column: 2 / span 3;
+			background:white;
+			border-top: 1px solid black;
+			}
+
+			article header.item {
+			grid-column: 1 / span 1;
+			background:none;
+			}
+
+			.thumbnails {
+			grid-column: 2 / span 2;
+			}
+
+			.thumbnails img {
+			width:100%;
+			max-height:600px;
+			}
+
+			footer {
+			font-style:italic;
+			}
+
+			@media (max-width: 600px) {
+			body {
+			background-color:red;
+			}
+
+			}
+
+		</style>
+	</head>
+	<body>
+		<wrapper>
+			<header id='main'>
+				<h1>Matias Peruyera</h1>
+				
+				<p class="about-1">Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen.</p>
+				<p class="about-2">Lorem ipsum.</p>
+				<p class="about-3">Lorem ipsum.</p>
+				
+			</header>
+			<main>
+				<section>
+					<header class='categoria'>
+						<h2>Infográficos comerciais</h2>
+						<p class="gravata">A explicação de um serviço inovador é parte importante desse serviço, assim como informações e conteúdo para aproveitá-lo melhor.</p>
+					</header>
+
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+				</section>
+
+				<section>
+					<header class='categoria'>
+						<h2>Infografia jornalística</h2>
+						<p class="gravata">Arquitetura e design de informação a serviço do jornalismo, para situações nas quais textos e fotografias não contam a história completa.</p>
+					</header>
+
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+
+				</section>
+
+				<section>
+					<header class='categoria'>
+						<h2>Mapas</h2>
+						<p class="gravata">Uma paixão antiga, parte importante da minha vida profissional.</p>
+					</header>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+				</section>
+
+				<section>
+					<header class='categoria'>
+						<h2>Visualizações acadêmicas</h2>
+						<p class="gravata">Ferramentas para encontrar questões humanas em grandes conjuntos de dados.</p>
+					</header>
+					
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+				</section>
+
+				<section>
+					<header class='categoria'>
+						<h2>Web</h2>
+							<p class="gravata">Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+					</header>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+				</section>
+				
+				<section>
+					<header class='categoria'>
+						<h2>Gravura e ilustração</h2>
+							<p class="gravata">Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+					</header>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+					<article>
+						<header class='item'>
+							<h3>Título não muito longo</h3>
+							<p>Texto descrevendo a parada de maneira sucinta, porque depois tem mais pra quem quiser.</p>
+							<p class="more"><a href=''>Ver caso</a></p>
+						</header>
+						<div class="thumbnails">
+							<p><img src="1180-2.png"></p>
+						</div>
+					</article>
+					
+				</section>
+				
+			</main>
+			<footer>
+				<p>Oi.</p>
+			</footer>
+		</wrapper>
+	</body>
 </html>
