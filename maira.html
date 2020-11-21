@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+
+	<head>
+		<title>Matias</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,900;1,300;1,900&display=swap" rel="stylesheet">
+		<style>
+			
+		article p img {
+		max-width:100%;
+		}
+		
+		article.caso {
+		grid-column: 2 / span 3;
+}
+
+	article.caso h3, article.caso p {
+			grid-column: 1 / span 3;
+			margin:0px;
+
+	}
+
+		</style>
+	</head>
+	<body>
+		<wrapper>
+			<header id='main'>
+				<h1>Matias Peruyera</h1>
+				
+				<p class="about-1">Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen. Lorem ipsum dolor sit amen.</p>
+				<p class="about-2">Lorem ipsum.</p>
+				<p class="about-3">Lorem ipsum.</p>
+				
+			</header>
+			<main>
+				<section>
+					<header class='categoria'>
+						<h2>Infográficos comerciais</h2>
+						<p class="gravata">A explicação de um serviço inovador é parte importante desse serviço, assim como informações e conteúdo para aproveitá-lo melhor.</p>
+					</header>
+
+					<article class="caso">
+							<h3>Grafos de análise de redes – bibliografias e relações em redes sociais</h3>
+							<p>Uma das hipóteses da tese da Dra. Máira Nunes era que teses e dissertações brasileiras sobre gênero e sexualidade se apoiam demais em bibliografias de outras áreas. Para confirmar essa hipótese, trabalhei analisando o corpus de aproximadamente 200 teses e dissertações sobre o assunto. Isso implicou em vários passos:</p>
+							<ol>
+							<li><strong>Separação das bibliografias das teses:</strong> usei scripts em Python, com a biblioteca pypdf, para separar as páginas das bibliografias.</li>
+							<li><strong>Verificação:</strong> conferência manual dos arquivos de texto obtidos.</li>
+							<li><strong>Tabulação:</strong> separação dos dados em colunas, com Regex, Open Refine, Excel e Open Office. Foi um passo bem trabalhoso, pelas diferentes interpretações das normas da ABNT de cada pesquisador.</li>	
+							<li><strong>Plotagem:</strong> explorar as diferentes visualizações no GePhi.</li>
+							<li><strong>Finalização: </strong>preparação para a impressão, com cores que usassem tintas puras, no Adobe Illustrator.</li>	
+							</ol>
+							<p>Também foi preparada uma versão interativa, para uso da pesquisadora.</p>
+							<p><img src="grafo-autores.png"></p>
+							<p>Como uma boa visualização de alta densidade, o resultado final pode ser lido em vários níveis, tanto no macro, mais geral, como no micro, observando detalhes e outras relações.</p>
+							<p><img src="grafo-autores-zoom.png"></p>
+							<h4>Rede de contatos</h4>
+							<p>Também foi feito um outro grafo, mapeando os grupos de amigos no Facebook das pessoas objetos do estudo. Como o Facebook havia bloqueado o acesso às ferramentas, foi pedido à pesquisadora para abrir as listas de amigos no próprio Facebook e copiasse e colasse tudo em um documento do Word (sim!), que depois foi processado com editores de texto (TextWrangler) e planilhas (Excel) para deixar os dados no formato adequado para o GePhi.</p>
+							<p><img src="rede-face-final.png"></p>
+							<h4>Outros infográficos</h4>
+							<p>A tese também contava com vários outros dados que se beneficiaram dos recursos da infografia.</p>
+							<p><img src="graficos-mapas.png"></p>						
+							
+
+					</article>
+
+				
+			</main>
+			<footer>
+				<p>Oi.</p>
+			</footer>
+		</wrapper>
+	</body>
+</html>
