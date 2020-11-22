@@ -44,16 +44,23 @@ font-weight:900;
 a {
 color:#00b;
 font-weight:600;
+  background-image: linear-gradient(to right, #00b , #00b );
+  background-position: 0 1.2em;
+  background-repeat: repeat-x;
+  background-size: 8px 1px;
+text-decoration:none;
 }
 
 a:hover {
 color:tomato;
+  background-image: linear-gradient(to right, tomato , tomato );
+
 }
 
 h1 {
 font-weight:300;
 font-size:600%;
-letter-spacing:-0.0em;
+letter-spacing:-0.03em;
 line-height:80%;
 margin-left:-10px;
 
@@ -130,10 +137,29 @@ h4  {
 	font-weight:300;
 	font-style:italic;
 	}
+	
+	
+h1 a, h2 a, h3 a, h4 a{
+background:none;
+text-decoration:none;
+color:black;
+font-weight:inherit;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover{
+background:none;
+
+text-decoration:none
+color:tomato;
+}
 
 p  {
 font-size: 110%;
 	}
+	
+p.gravata {
+	letter-spacing:0.02em;
+}
 	
 p.more  {
 	display:block;
@@ -141,6 +167,7 @@ p.more  {
 	}
 	
 p.more a {
+	background:none;
 	text-decoration:none;
 	font-weight:300;
 	color:tomato;
@@ -237,6 +264,9 @@ article.caso ol{
 }
 
 footer  {
+	padding-top:20px;
+		margin-bottom:40px
+
 	font-style:italic;
 	}
 
