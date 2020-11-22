@@ -66,21 +66,27 @@ header#main h1  {
 	
 header#main p.about-1 {
 	grid-column: 1 / span 2;
-	background-color:#999;
 	}
 	
 header#main p.about-2 {
 	grid-column: 3 / span 1;
-	background-color:#666;
+	padding: 10px;
+	padding-left;padding-right: 16px;
+	border: 2px solid tomato;
+
+	
 	}
 	
 header#main p.about-3 {
 	grid-column: 4 / span 1;
-	background-color:#333;
+		padding: 10px;
+	padding-left;padding-right: 16px;
+	border: 2px solid #ddd;
+
 	}
 
 h2, h3, h4  {
-	line-height: 20%;
+	line-height: 140%;
 	font-size:160%;
 	margin-bottom: 20px;
 	}
@@ -88,7 +94,6 @@ h2, h3, h4  {
 
 	
 h2::first-line, h3::first-line  {
-	line-height:200%;
 	}
 	
 h2  {
