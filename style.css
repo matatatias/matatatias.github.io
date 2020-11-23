@@ -103,14 +103,17 @@ header#main p.about-1 {
 header#main p.about-2 {
 	grid-column: 3 / span 1;
 	padding: 10px;
-	padding-left;padding-right: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+
 	border: 2px solid tomato;
 	}
 	
 header#main p.about-3 {
 	grid-column: 4 / span 1;
-		padding: 10px;
-	padding-left;padding-right: 16px;
+	padding: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
 	border: 2px solid #ddd;
 
 	}
@@ -156,8 +159,7 @@ letter-spacing:-0.03em;
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover{
 background:none;
-
-text-decoration:none
+text-decoration:none;
 color:tomato;
 }
 
@@ -181,7 +183,8 @@ p.more a {
 	color:tomato;
 	background-color:white;
 	padding: 5px;
-	padding-left;padding-right: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
 	width:100%;
 	border: 1px solid tomato;
 	}
@@ -262,7 +265,6 @@ width:100%;
 }
 
 
-}
 	
 article.caso  {
 	grid-column: 2 / span 3;
@@ -279,14 +281,30 @@ article.caso ol{
 	list-style-type:decimal;
 }
 
-footer  {
+footer {
 	padding-top:20px;
 		margin-bottom:40px;
 	font-style:italic;
 	}
 
+.cv-h2 {
+	grid-column: 1 / span 1;
+	background-color:red;
+	}
+	
+.cv-h3 {
+	grid-column: 2 / span 2;
+	background-color:pink;
+	}
+
+.cv-h4 {
+	grid-column: 2 / span 1;
+
+	background-color:aqua;
+	}
+
 @media (max-width: 600px)  {
 	body  {
-		background-color:red;
+		background-color:white;
 		}
 	}
